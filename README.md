@@ -39,10 +39,10 @@ data/raw/telepati. Jangan mengubah pembagian train/validation/test.
 ```powershell
 python prepare_dataset_yolo.py --source data/raw/telepati --output data/yolo --reports reports/reproduction_audit
 python prepare_coco.py --source-yolo data/yolo --output data/coco
-python train.py --data-reference data/coco/dataset_reference.json --pretrain models/rf-detr-nano.pth --epochs 12
+python train.py --data-reference data/coco/dataset_reference.json --pretrain models/pretrained/rf-detr-nano.pth --epochs 12
 ```
 
-models/rf-detr-nano.pth pada perintah training adalah checkpoint **awal resmi**
+models/pretrained/rf-detr-nano.pth pada perintah training adalah checkpoint **awal resmi**
 yang diunduh melalui RF-DETR, bukan bobot akhir RF-DETR-Nano.pth dari Release.
 Untuk memulai dari checkpoint akhir, perlakukan sebagai eksperimen warm start baru.
 
