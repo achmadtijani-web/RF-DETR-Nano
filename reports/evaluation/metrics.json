@@ -1,0 +1,71 @@
+{
+  "model": "RF-DETR Nano",
+  "created_utc": "2026-10-24T19:26:15.955874+00:00",
+  "metric_implementation": "Ultralytics 8.4.182",
+  "resolution": 640,
+  "ap_confidence_floor": 0.001,
+  "max_det": 300,
+  "nms": null,
+  "checkpoint_selection": "Maximum validation EMA COCO mAP@50-95.",
+  "threshold_selection": "Maximum unsmoothed mean per-class F1 on validation; same grid as baseline.",
+  "f1_definition": "Mean of per-class harmonic P/R at IoU 0.50, using validation-selected confidence.",
+  "test_note": "Internal benchmark also used in earlier experiments; not an independent field evaluation.",
+  "selected_confidence": 0.3943943943943944,
+  "val": {
+    "mAP50": 0.7073673148806511,
+    "mAP50_95": 0.5149728158995589,
+    "macro_precision_iou50": 0.7310293105524281,
+    "macro_recall_iou50": 0.7038601722975444,
+    "macro_f1_iou50": 0.7050224978231429,
+    "images": 2046,
+    "gt_instances": 4758,
+    "classes_evaluated": 18,
+    "annotation_sha256": "c14e0ecce78ec31cfc262b19ba1ceed7ffea89573695470460ba64b2fb736b57",
+    "prediction_cache_sha256": "38e9a090e4c0eae8789f9dba274b3ba5c78ae705385d5a6a51d7ef62727d4b6b",
+    "confusion_matrix": {
+      "confidence": 0.3943943943943944,
+      "matching_iou": 0.5
+    }
+  },
+  "test": {
+    "mAP50": 0.7212426976563089,
+    "mAP50_95": 0.5543194906192624,
+    "macro_precision_iou50": 0.7433101822511077,
+    "macro_recall_iou50": 0.7154388688216003,
+    "macro_f1_iou50": 0.7135191452098204,
+    "images": 1059,
+    "gt_instances": 2669,
+    "classes_evaluated": 18,
+    "annotation_sha256": "967090600c1566fd625a4ba55460d8e48ee543eff575102dad4c540bdcbf3f16",
+    "prediction_cache_sha256": "3ed75d03275a3b5ec04ac0799c0162d94a4a98d968ddac74af823c524614969d",
+    "confusion_matrix": {
+      "confidence": 0.3943943943943944,
+      "matching_iou": 0.5
+    }
+  },
+  "weights_sha256": "16986ca5759c80869dd46fe121efd1ae434a98a1831dc8bf86d27b6dacb38338",
+  "comparison": {
+    "baseline": "YOLO26s",
+    "baseline_weights_sha256": "2b4a698f807590bea2a8f91bcd9d7b54b52f3b48d76640a421fb9fb9398d959b",
+    "baseline_test": {
+      "mAP50": 0.6679665908318583,
+      "mAP50_95": 0.4725391269453685,
+      "macro_precision_iou50": 0.6901023053061981,
+      "macro_recall_iou50": 0.7111576623745786,
+      "macro_f1_iou50": 0.673120427394553,
+      "gt_instances": 2669,
+      "classes_evaluated": 18,
+      "speed_ms_per_image": {
+        "preprocess": 1.095378186967024,
+        "inference": 8.456977242680574,
+        "loss": 0.0020233238863097405,
+        "postprocess": 1.418426251195696
+      }
+    },
+    "mAP50_delta_percentage_points": 5.32761068244506,
+    "macro_f1_delta_percentage_points": 4.039871781526738,
+    "both_submission_metrics_better": true,
+    "different_inference_preprocessing": "RF-DETR square resize; YOLO default letterbox.",
+    "uncertainty": "Single-seed experiment; no statistical superiority claim."
+  }
+}
