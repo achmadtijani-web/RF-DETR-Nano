@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "predictions": 4,
+  "gt_objects": 1,
+  "correct_detections_at_all_ten_IoUs": 1,
+  "cases": [
+    "wrong class is FP",
+    "correct box is TP",
+    "duplicate prediction is FP",
+    "prediction on background image is FP"
+  ]
+}

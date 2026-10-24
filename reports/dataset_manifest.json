@@ -1,0 +1,113 @@
+{
+  "scope": "full",
+  "categories": [
+    {
+      "id": 0,
+      "name": "Bacterial panicle Blight",
+      "supercategory": "none"
+    },
+    {
+      "id": 1,
+      "name": "False-Smut",
+      "supercategory": "none"
+    },
+    {
+      "id": 2,
+      "name": "Healthy Rice Leaf",
+      "supercategory": "none"
+    },
+    {
+      "id": 3,
+      "name": "Healthy Rice beads",
+      "supercategory": "none"
+    },
+    {
+      "id": 4,
+      "name": "Infected Blast",
+      "supercategory": "none"
+    },
+    {
+      "id": 5,
+      "name": "Leaf-roller",
+      "supercategory": "none"
+    },
+    {
+      "id": 6,
+      "name": "Blast",
+      "supercategory": "none"
+    },
+    {
+      "id": 7,
+      "name": "BrownSpot",
+      "supercategory": "none"
+    },
+    {
+      "id": 8,
+      "name": "Healthy",
+      "supercategory": "none"
+    },
+    {
+      "id": 9,
+      "name": "Leaf Scald",
+      "supercategory": "none"
+    },
+    {
+      "id": 10,
+      "name": "Rice-Tungro",
+      "supercategory": "none"
+    },
+    {
+      "id": 11,
+      "name": "Sheath Blight",
+      "supercategory": "none"
+    },
+    {
+      "id": 12,
+      "name": "Bacterial leaf blight",
+      "supercategory": "none"
+    },
+    {
+      "id": 13,
+      "name": "Brown spot",
+      "supercategory": "none"
+    },
+    {
+      "id": 14,
+      "name": "Leaf blast",
+      "supercategory": "none"
+    },
+    {
+      "id": 15,
+      "name": "Leaf scald",
+      "supercategory": "none"
+    },
+    {
+      "id": 16,
+      "name": "Narrow brown",
+      "supercategory": "none"
+    },
+    {
+      "id": 17,
+      "name": "healthy",
+      "supercategory": "none"
+    }
+  ],
+  "counts": {
+    "train": {
+      "images": 8822,
+      "annotations": 18002,
+      "annotation_sha256": "864da9e170d416503f674bc7a182e8f612feb34b2be1dd1853c0e8f228b88d16"
+    },
+    "val": {
+      "images": 2046,
+      "annotations": 4758,
+      "annotation_sha256": "c14e0ecce78ec31cfc262b19ba1ceed7ffea89573695470460ba64b2fb736b57"
+    },
+    "test": {
+      "images": 1059,
+      "annotations": 2669,
+      "annotation_sha256": "967090600c1566fd625a4ba55460d8e48ee543eff575102dad4c540bdcbf3f16"
+    }
+  },
+  "test_used_for_training": false
+}

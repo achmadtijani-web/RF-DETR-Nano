@@ -1,0 +1,9 @@
+{
+  "source_sha256": "018b8c38deb461e5bbe0d39edb99b43674d8425c18477dee7e084c88a0ea4c01",
+  "weights": "models/RF-DETR-Nano.pth",
+  "weights_sha256": "16986ca5759c80869dd46fe121efd1ae434a98a1831dc8bf86d27b6dacb38338",
+  "all_model_tensors_identical": true,
+  "tensor_count": 466,
+  "trained_epoch_zero_based": 11,
+  "note": "Only metadata and redundant training state removed; every model tensor is unchanged."
+}

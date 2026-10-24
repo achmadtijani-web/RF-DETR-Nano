@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-10-24T03:02:40.257172+00:00",
+  "weights": "models/best.pt",
+  "weights_sha256": "2b4a698f807590bea2a8f91bcd9d7b54b52f3b48d76640a421fb9fb9398d959b",
+  "data_yaml": "data/yolo/data.yaml",
+  "data_yaml_sha256": "a82abdec6a0c3aca374dc8b2342e865eb89babe0ca569eb5bedfc29b820094b6",
+  "device": "0",
+  "ultralytics": "8.4.182",
+  "torch": "2.7.1+cu128",
+  "imgsz": 640,
+  "nms_iou": 0.7,
+  "ap_confidence_floor": 0.001,
+  "max_det": 300,
+  "nms": null,
+  "inference_mode_note": "Ultralytics default NMS; YOLO26 uses the one-to-many head.",
+  "confusion_matrix_plot": {
+    "confidence": 0.001,
+    "matching_iou": 0.45
+  },
+  "threshold_selection": "Confidence dengan macro-F1 validation tertinggi pada kurva Ultralytics.",
+  "precision_recall_note": "P/R interpolasi kurva pada confidence validation yang sama; IoU matching 0.50. Angka bukan accuracy klasifikasi dan confidence bukan probabilitas terkalibrasi.",
+  "selected_confidence": 0.26626626626626626,
+  "validation_threshold_has_true_positives": true,
+  "val": {
+    "mAP50": 0.6514496891193037,
+    "mAP50_95": 0.4345467661337829,
+    "macro_precision_iou50": 0.677050945030679,
+    "macro_recall_iou50": 0.6927855560515468,
+    "macro_f1_iou50": 0.6623751149257453,
+    "gt_instances": 4758,
+    "classes_evaluated": 18,
+    "speed_ms_per_image": {
+      "preprocess": 1.0847107526859927,
+      "inference": 8.206052688169573,
+      "loss": 0.0012580156461713527,
+      "postprocess": 1.3442137341143077
+    }
+  },
+  "test": {
+    "mAP50": 0.6679665908318583,
+    "mAP50_95": 0.4725391269453685,
+    "macro_precision_iou50": 0.6901023053061981,
+    "macro_recall_iou50": 0.7111576623745786,
+    "macro_f1_iou50": 0.673120427394553,
+    "gt_instances": 2669,
+    "classes_evaluated": 18,
+    "speed_ms_per_image": {
+      "preprocess": 1.095378186967024,
+      "inference": 8.456977242680574,
+      "loss": 0.0020233238863097405,
+      "postprocess": 1.418426251195696
+    }
+  },
+  "publication_provenance": {
+    "weights_sha256": "2b4a698f807590bea2a8f91bcd9d7b54b52f3b48d76640a421fb9fb9398d959b",
+    "original_checkpoint_sha256": "232fd2295d08cf482a9ec99092a757caa0bff350d65593e33d2beff5645f74b0",
+    "report": "reports/public_checkpoint.json",
+    "note": "Metrics evaluated from public checkpoint; metric values unmodified."
+  }
+}
