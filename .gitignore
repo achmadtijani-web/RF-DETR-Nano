@@ -1,0 +1,16 @@
+.venv*/
+.cache/
+.ultralytics/
+data/
+models/*.pth
+models/*.pt
+runs/
+reports/predictions/
+reports/*.log
+reports/*.pid
+reports/dataset_reference.json
+reports/requested_config.json
+reports/training_status.json
+__pycache__/
+*.pyc
+package/
